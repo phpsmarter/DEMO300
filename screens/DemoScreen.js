@@ -11,8 +11,12 @@ export default class DemoScreen extends Component {
   
   render() {
     return (
-     <Container style={{marginTop:30}} >
-       
+      <View>
+       <StatusBar backgroundColor="blue" barStyle="light-content" /> 
+
+     
+     <Container >
+      
       <ImageBackground source={require('../assets/images/amazon/bg.png')} style={{width:'100%', height: 300,resizeMode:'contain'}}>
         <StatusBar backgroundColor="blue" barStyle="light-content" />
          <Head/> 
@@ -94,6 +98,8 @@ export default class DemoScreen extends Component {
       </View>
 
       </Container>
+
+      </View>
      
      
         

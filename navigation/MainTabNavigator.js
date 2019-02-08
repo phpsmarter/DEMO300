@@ -7,7 +7,7 @@ import HomeScreen from '../screens/HomeScreen';
 import LinksScreen from '../screens/LinksScreen';
 import SettingsScreen from '../screens/SettingsScreen';
 import DemoScreen from '../screens/DemoScreen';
-
+import CouponScreen from '../screens/CouponScreen';
 
 const HomeStack = createStackNavigator({
   Home: HomeScreen,
@@ -69,6 +69,27 @@ DemoStack.navigationOptions = {
       focused={focused}
       name={
         Platform.OS === 'ios'
+          ?  'ios-cog'
+          : 'ios-cog'
+      }
+    />
+  ),
+};
+
+const CouponStack = createStackNavigator({
+  Demo: CouponScreen,
+  
+},{
+  headerMode: 'none',
+});
+
+CouponStack.navigationOptions = {
+  tabBarLabel: 'Coupon',
+  tabBarIcon: ({ focused }) => (
+    <TabBarIcon
+      focused={focused}
+      name={
+        Platform.OS === 'ios'
           ?  'ios-desktop'
           : 'md-desktop'
       }
@@ -81,4 +102,5 @@ export default createBottomTabNavigator({
   LinksStack,
   SettingsStack,
   DemoStack,
+  CouponStack
 });
