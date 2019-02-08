@@ -57,6 +57,9 @@ SettingsStack.navigationOptions = {
 
 const DemoStack = createStackNavigator({
   Demo: DemoScreen,
+  
+},{
+  headerMode: 'none',
 });
 
 DemoStack.navigationOptions = {
