@@ -12,20 +12,7 @@ export default class CouponScreen extends React.Component {
     return (
         <View style={styles.container}>
            <StatusBar backgroundColor="blue" barStyle="light-content" />
-            <View style={[styles.card,shadow]}>
-            <Image source={require('../assets/images/coupon/logo.png')} style={{height:124,width:'100%',resizeMode:'center'}}/>
-            <Image source={require('../assets/images/coupon/background.png')} style={{height:21,width:'100%',resizeMode:'contain'}}/>
-            <Text style={{paddingHorizontal:10,fontSize:18}}>40% Off </Text>
-            <Text style={{paddingHorizontal:10,fontSize:18}}>Beverge,Get Free</Text>
-            <View style={{flexDirection:'row',justifyContent:'space-between'
-            ,paddingHorizontal:10,paddingVertical:5}}>
-              <View style={{flexDirection:'row'}}>
-              <Icon.Feather name="navigation" style={{color:'rgba(0, 175, 255, 1.000)', fontSize: 12, paddingTop: 5 }} />
-              <Text style={{marginLeft:5,marginTop:2,color:'gray',fontSize:12}}>0.8 KM</Text>
-              </View>
-              <Icon.Feather name="heart" style={{ fontSize: 16, paddingTop: 5 ,color:'gray'}} />
-            </View>
-           </View>
+           <View><Text>Coupon</Text></View>
         </View>
     )
   }
