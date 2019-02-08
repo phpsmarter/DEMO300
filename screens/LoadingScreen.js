@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Text, View,ActivityIndicator,StatusBar,StyleSheet, AsyncStorage} from 'react-native'
+import { Text, View,ActivityIndicator,StatusBar,StyleSheet, AsyncStorage,ImageBackground} from 'react-native'
 
 export default class LoadingScreen extends Component {
     componentDidMount() {
@@ -16,7 +16,8 @@ export default class LoadingScreen extends Component {
         return (
           <View style={styles.container}>
             <ActivityIndicator />
-            <StatusBar barStyle="default" />
+            <StatusBar backgroundColor="blue" barStyle="light-content" />
+            
           </View>
         );
       }
