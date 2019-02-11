@@ -8,7 +8,7 @@ export default class SignInScreen extends Component {
 
     _signInAsync= async ()=>{
         await AsyncStorage.setItem('userToken','abc');
-        this.props.navigation.navigate('Home');
+        this.props.navigation.navigate('Demo');
     }
 
     _signOutAsync = async () => {

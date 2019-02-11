@@ -6,7 +6,7 @@ import TabBarIcon from '../components/TabBarIcon';
 import HomeScreen from '../screens/HomeScreen';
 import LinksScreen from '../screens/LinksScreen';
 import SettingsScreen from '../screens/SettingsScreen';
-import DemoScreen from '../screens/DemoScreen';
+import DemoScreen from '../screens/BookingScreen';
 import CouponScreen from '../screens/CouponScreen';
 
 const HomeStack = createStackNavigator({
@@ -100,9 +100,9 @@ CouponStack.navigationOptions = {
 };
 
 export default createBottomTabNavigator({
+  DemoStack,
   HomeStack,
   LinksStack,
   SettingsStack,
-  DemoStack,
   CouponStack
 });

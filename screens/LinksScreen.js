@@ -1,5 +1,5 @@
-import React,{Component} from 'react';
-import { ScrollView, StyleSheet,AsyncStorage,Button,StatusBar,View,Image} from 'react-native';
+import React from 'react';
+import { Image, ScrollView, StatusBar, StyleSheet, View } from 'react-native';
 import { MenuItem } from '../components/MenuItem';
 
 
@@ -8,18 +8,17 @@ export default class LinksScreen extends React.Component {
 
 
   render() {
+
+    const onNavigation=()=>alert("navigate to next pages");
     return (
       <View style={{ flex: 1, backgroundColor: 'rgba(255, 167, 38, 0.000)' }}>
 
         <StatusBar backgroundColor="blue" barStyle="light-content" />
 
-        <View style={styles.menu}>
-          <Image source={require('../assets/images/pizza/leftMenu.png')} style={{ width: 30, height: 30, resizeMode: 'contain' }}></Image>
-          <Image source={require('../assets/images/pizza/bag.png')} style={{ width: 30, height: 30, resizeMode: 'contain' }}></Image>
-        </View>
+        this.showHeader()
         <ScrollView style={styles.container}>
 
-          <MenuItem picUrl={require('../assets/images/pizza/menupizza.png')} title={'Pizza'} index={0} />
+          <MenuItem picUrl={require('../assets/images/pizza/menupizza.png')} title={'Pizza'} index={0} _onPress={onNavigation} />
           <MenuItem picUrl={require('../assets/images/pizza/menupasta.png')} title={'Pasta'} index={1} />
           <MenuItem picUrl={require('../assets/images/pizza/menusalad.png')} title={'Salad'} index={2} />
           <MenuItem picUrl={require('../assets/images/pizza/menudessert.png')} title={'Dessert'} index={3} />
@@ -27,6 +26,13 @@ export default class LinksScreen extends React.Component {
         </ScrollView>
       </View>
     );
+  }
+
+  showHeader() {
+    return <View style={styles.menu}>
+      <Image source={require('../assets/images/pizza/leftMenu.png')} style={{ width: 30, height: 30, resizeMode: 'contain' }}></Image>
+      <Image source={require('../assets/images/pizza/bag.png')} style={{ width: 30, height: 30, resizeMode: 'contain' }}></Image>
+    </View>;
   }
 }
  

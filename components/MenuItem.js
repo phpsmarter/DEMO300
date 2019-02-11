@@ -6,7 +6,7 @@ export const MenuItem = (props) => {
   return (<ImageBackground source={props.picUrl} style={[styles.menuPic, props.index == 0 ? { marginTop: -40 } : null]}>
 
     <View style={styles.menuBox}>
-      <Text style={styles.menuText}>{props.title}</Text>
+      <Text style={styles.menuText} onPress={props. _onPress}>{props.title}</Text>
     </View>
   </ImageBackground>);
 };
