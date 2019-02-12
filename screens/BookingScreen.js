@@ -33,7 +33,7 @@ export default class DemoScreen extends Component {
         <View style={styles.bookingTitle}>
          <Icon.Ionicons name="ios-arrow-back" style={{marginRight:130,fontSize:24,fontWeight:'bold'}}></Icon.Ionicons>
          <View>
-             <View style={{width:100,alignSelf:'center'}}>
+             <View style={{width:120,alignSelf:'center',marginLeft:-20}}>
               <Text style={{fontSize:24}}>Chicken Supreme</Text>
              </View>
          </View>

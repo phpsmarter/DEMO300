@@ -6,8 +6,10 @@ import TabBarIcon from '../components/TabBarIcon';
 import HomeScreen from '../screens/HomeScreen';
 import LinksScreen from '../screens/LinksScreen';
 import SettingsScreen from '../screens/SettingsScreen';
-import DemoScreen from '../screens/BookingScreen';
+import DemoScreen from '../screens/EditorScreen1';
 import CouponScreen from '../screens/CouponScreen';
+//import YourBagScreen from '../screens/YourBagScreen';
+
 
 const HomeStack = createStackNavigator({
   Home: HomeScreen,

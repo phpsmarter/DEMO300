@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import { Text, View,ScrollView,StyleSheet,Image,Button} from 'react-native';
-import {Content,Picker, Form ,Icon,} from "native-base";
+import { Text, View,ScrollView,StyleSheet,Image} from 'react-native';
+import {Content,Picker, Form ,Icon,Button,Textarea} from "native-base";
 
 import styled from 'styled-components/native';
 const BookSizeCard=(props)=>{
@@ -41,12 +41,12 @@ export default class Tab1 extends Component {
   render() {
     return (
       <ScrollView>
-        <Text style={{fontSize:18}}>Size</Text>
+        <Text style={{fontSize:16}}>Size</Text>
         <View style={{height:150,width:'100%',flexDirection:'row',justifyContent:'center'}} >
             <BookSizeCard selected={true}/>
             <BookSizeCard selected={false}/>
          </View>
-         <View>
+         <View style={{marginTop:10}}>
           <Text>Quantity</Text>
           <Form style={{height:35,width:'90%',borderRadius:4,borderWidth:1,borderColor:'gray',alignSelf:'center'}}>
             <Picker
@@ -68,14 +68,29 @@ export default class Tab1 extends Component {
           </Form>
          </View>
 
-         <View>
-           <Text>Style of Cake</Text>
-           <View style={{flexDirection:'row',justifyContent:'space-around'}}>
-             <Button title="Thick"></Button>
-             <Button title="Thin"></Button>
-             
-           </View>
-         </View>
+        <View style={{marginTop:10,}}>
+          <Text>Style of Cake</Text>
+          <View style={{ flexDirection: 'row', justifyContent: 'space-around' }}>
+            <Button danger style={styles.btn}>
+              <Text>Thick</Text>
+            </Button>
+            <Button bordered light style={styles.btn}>
+              <Text>Thin</Text>
+            </Button>
+
+          </View>
+        </View>
+
+        <View >
+          <Text>Topping</Text>
+          <Button danger style={[styles.btn,{paddingHorizontal:100,alignSelf:'center'}]}><Text style={{color:'white',fontSize:16}}>Add Topping</Text></Button>
+        </View>
+
+        <View>
+        <Form>
+            <Textarea rowSpan={5} bordered placeholder="Textarea" />
+          </Form>
+        </View>
       </ScrollView>
     )
   }
@@ -89,8 +104,10 @@ const styles=StyleSheet.create({
      borderRadius:6,
      marginHorizontal:10,
      alignItems:'center',
-     
+    },
+    btn:{
+      marginTop:10,
+      paddingHorizontal:50
 
-
-   }
+    }
 })
