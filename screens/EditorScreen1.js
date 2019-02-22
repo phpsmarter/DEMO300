@@ -69,10 +69,7 @@ export default class DemoScreen extends Component {
                             <BookSizeCard selected={false}/>
                         </View>
 
-                        <View style={{height:150,width:'100%',flexDirection:'row',justifyContent:'center'}} >
-                            <BookSizeCard selected={true}/>
-                            <BookSizeCard selected={false}/>
-                        </View>
+                        
 
                         </ScrollView>
                         

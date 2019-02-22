@@ -87,7 +87,7 @@ export default class Tab1 extends Component {
         </View>
 
         <View>
-        <Form>
+            <Form>
             <Textarea rowSpan={5} bordered placeholder="Textarea" />
           </Form>
         </View>
