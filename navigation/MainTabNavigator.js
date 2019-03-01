@@ -10,7 +10,7 @@ import HomeScreen from "../screens/HomeScreen";
 import LinksScreen from "../screens/LinksScreen";
 import SettingsScreen from "../screens/SettingsScreen";
 //NOTE  demo-entry
-import DemoScreen from "../screens/MapScreen";
+import DemoScreen from "../screens/FlightBookScreen2";
 import CouponScreen from "../screens/CouponScreen";
 //import YourBagScreen from '../screens/YourBagScreen';
 
