@@ -10,7 +10,6 @@ import {
   Text,
   Image,
   Button,
-  Teaxtarea,
   TouchableWithoutFeedback,
   Animated
 } from "react-native";
